@@ -1,0 +1,35 @@
+body {
+	background-color: #2b2a27;
+	color: #ede0ce;
+}
+
+.heading {
+	color: #bcd42a;
+	padding-bottom: 15px;
+}
+
+.heading p {
+	color: #FFFFFF;
+}
+
+h2 {
+	color: #bcd42a;
+}
+
+.btn {
+	margin-top: 15px;
+}
+
+.btn-default {
+	background-color: #2b2a27;
+	color: #7a7267;
+}
+
+.button {
+	margin-left: 46%;
+}
+
+.footer {
+	padding-top: 45px;
+	padding-bottom: 30px;
+}

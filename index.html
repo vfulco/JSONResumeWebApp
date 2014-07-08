@@ -8,15 +8,17 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/stylesheet.css" rel="stylesheet">
   </head>
   <body>
 
   	<div class="container">
-    	
     	<center>
-	    	<h1>JSON Resume Web App</h1>
-	    	<p>Use this to generate quick and easy JSON to create your JSON Resume.</p>
-	    	<br>
+    		<div class="heading">
+		    	<h1>JSON Resume Web App</h1>
+		    	<p>Use this to generate quick and easy JSON to use for your <a href="http://jsonresume.org/">JSON Resume</a></p>
+		    	<p>Fill out the forms and click "Generate" at the bottom!</p> 	
+		    </div>
     	</center>
     
 		<form class="form-horizontal" role="form">
@@ -321,19 +323,16 @@
 		      <button type="add" class="btn btn-default">Add Another Reference</button>
 		  	</div>
 		  </div>
-		  
-		  <div class="form-group">
-		    <div class="col-sm-offset-5 col-sm-10">
-		      <button type="generate" class="btn btn-primary">Generate</button>
-		    </div>
-		  </div>
 		</form>
 
+		<div class="button">
+			<button type="generate" class="btn btn-default" style="">Generate</button>
+		</div>
     </div>
 
 
     <footer>
-    	<div class="container"><center>Created by Jonny Krysh &copy;2014.</center></div>
+    	<div class="footer"><center>Created by Jonny Krysh &copy;2014.</center></div>
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
