@@ -1,6 +1,15 @@
 body {
-	background-color: #2b2a27;
+	background-color: #000000;
+	background-position: center;
+	background-image: url('Resume.jpeg');
+	background-repeat: repeat;
 	color: #ede0ce;
+}
+
+.container {
+	padding: 2%;
+	background-color: #2b2a27;
+	opacity: 0.95;
 }
 
 .heading {
@@ -22,7 +31,7 @@ h2 {
 
 .btn-default {
 	background-color: #2b2a27;
-	color: #7a7267;
+	color: #FFFFFF;
 }
 
 .button {
@@ -30,6 +39,7 @@ h2 {
 }
 
 .footer {
-	padding-top: 45px;
-	padding-bottom: 30px;
+	background-color: #2b2a27;
+	opacity: 0.95;
+	text-align: center;
 }
