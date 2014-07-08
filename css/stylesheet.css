@@ -38,6 +38,12 @@ h2 {
 	margin-left: 46%;
 }
 
+#output {
+	margin-top: 5%;
+	background-color: black;
+	color: #bcd42a;
+}
+
 .footer {
 	background-color: #2b2a27;
 	opacity: 0.95;
