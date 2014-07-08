@@ -1,63 +1,107 @@
-// some data structure loop
-	// if Generate is pressed
-		// take button data
-		// put into JSON string
 
-var myJSONObject = 
-{
-		"bio": {
-        	"firstName": "", "lastName": "", 
-        	"email": {
-        		"work": "",
-        		"personal": ""
-        	},
+// $('#output').hide();
 
-        	"phone": {
-        		"work": "",
-        		"personal": ""
-        	},
+var myJSONObject;
 
-        	"summary": "",
-        	"location": {
-        		"city": "",
-        		"countryCode": "",
-        		"region": "",
-        		"state": ""
-        	},
+function readInput() {
+        $('#output').show();
+        myJSONObject = 
+        {
+          "bio": {
+            "firstName": "",
+            "lastName": "",
+            "email": {
+              "work": "",
+              "personal": ""
+            },
+            "phone": {
+              "work": "",
+              "personal": ""
+            },
+            "summary": "",
+            "location": {
+              "city": "",
+              "countryCode": "",
+              "state": ""
+            },
+            "websites": {
+              "blog": ""
+            },
+            "profiles": {
+              "github": "",
+              "twitter": ""
+            }
+          },
 
-        	"websites": {
-        		"blog": ""
-        	},
+          "work": [
+            {
+              "company": "",
+              "position": "",
+              "website": "",
+              "startDate": "",
+              "endDate": "",
+              "summary": "",
+              "highlights": [
+                ""
+              ]
+            }
+          ],
 
-        	"profiles": {
-        		"twitter": "",
-        		"github": ""
-        	}
-        },
+          "education": [
+            {
+              "institution": "",
+              "startDate": "",
+              "endDate": "",
+              "area": "",
+              "studyType": ,
+              "courses": [
+                ""
+              ]
+            }
+          ],
 
-        "work": [{
-        	"company": "",
-        	"position": "",
-        	"website": "",
-        	"startDate": "",
-        	"endDate": "",
-        	"summary": "",
-        	"highlights": [
-        		""
-        	]
-        }],
+          "awards": [
+            {
+              "title": "",
+              "date": "",
+              "awarder": ""
+            }
+          ],
 
-        "education": [{
-        	"institution": "",
-        	"area": "",
-        	"studyType": "",
-        	"startDate": "",
-        	"endDate": "",
-        	"courses": [
-        		""
-        	]
-        }]
+          "publications": [
+            {
+              "name": "",
+              "publisher": "",
+              "releaseDate": "",
+              "website": ""
+            }
+          ],
 
+          "skills": [
+            {
+              "name": "",
+              "level": "",
+              "keywords": [
+                ""
+              ]
+            },
+
+            {
+              "name": "",
+              "level": "",
+              "keywords": [
+                "GIF"
+              ]
+            }
+          ],
+          
+          "references": [
+            {
+              "name": "",
+              "reference": ""
+            }
+          ]
+        };
 };
 
 var str = JSON.stringify(myJSONObject, undefined, 2);
