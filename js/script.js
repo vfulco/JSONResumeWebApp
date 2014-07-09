@@ -1,111 +1,118 @@
 
-// $('#output').hide();
+$('#output').hide();
 
 var myJSONObject;
 
 function readInput() {
-        $('#output').show();
-        myJSONObject = 
-        {
-          "bio": {
-            "firstName": "",
-            "lastName": "",
-            "email": {
-              "work": "",
-              "personal": ""
-            },
-            "phone": {
-              "work": "",
-              "personal": ""
-            },
-            "summary": "",
-            "location": {
-              "city": "",
-              "countryCode": "",
-              "state": ""
-            },
-            "websites": {
-              "blog": ""
-            },
-            "profiles": {
-              "github": "",
-              "twitter": ""
-            }
-          },
+  $('#output').show();
+        
+  // to fill with input
+  // "" + input + ""
+  // will output at "input"
 
-          "work": [
-            {
-              "company": "",
-              "position": "",
-              "website": "",
-              "startDate": "",
-              "endDate": "",
-              "summary": "",
-              "highlights": [
-                ""
-              ]
-            }
-          ],
+  myJSONObject = 
+  {
+    "bio": 
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": {
+        "work": "",
+        "personal": ""
+      },
+      "phone": {
+        "work": "",
+        "personal": ""
+      },
+      "summary": "",
+      "location": {
+        "city": "",
+        "countryCode": "",
+        "state": ""
+      },
+      "websites": {
+        "blog": ""
+      },
+      "profiles": {
+        "github": "",
+        "twitter": ""
+      }
+    },
 
-          "education": [
-            {
-              "institution": "",
-              "startDate": "",
-              "endDate": "",
-              "area": "",
-              "studyType": ,
-              "courses": [
-                ""
-              ]
-            }
-          ],
+    "work": [
+      {
+        "company": "",
+        "position": "",
+        "website": "",
+        "startDate": "",
+        "endDate": "",
+        "summary": "",
+        "highlights": [
+          ""
+        ]
+      }
+    ],
 
-          "awards": [
-            {
-              "title": "",
-              "date": "",
-              "awarder": ""
-            }
-          ],
+    "education": [
+      {
+        "institution": "",
+        "startDate": "",
+        "endDate": "",
+        "area": "",
+        "studyType": "",
+        "courses": [
+          ""
+        ]
+      }
+    ],
 
-          "publications": [
-            {
-              "name": "",
-              "publisher": "",
-              "releaseDate": "",
-              "website": ""
-            }
-          ],
+    "awards": [
+      {
+        "title": "",
+        "date": "",
+        "awarder": ""
+      }
+    ],
 
-          "skills": [
-            {
-              "name": "",
-              "level": "",
-              "keywords": [
-                ""
-              ]
-            },
+    "publications": [
+      {
+        "name": "",
+        "publisher": "",
+        "releaseDate": "",
+        "website": ""
+      }
+    ],
 
-            {
-              "name": "",
-              "level": "",
-              "keywords": [
-                "GIF"
-              ]
-            }
-          ],
-          
-          "references": [
-            {
-              "name": "",
-              "reference": ""
-            }
-          ]
-        };
+    "skills": [
+      {
+        "name": "",
+        "level": "",
+        "keywords": [
+          ""
+        ]
+      },
+
+      {
+        "name": "",
+        "level": "",
+        "keywords": [
+          "GIF"
+        ]
+      }
+    ],
+    
+    "references": [
+      {
+        "name": "",
+        "reference": ""
+      }
+    ]}
+
+  var str = JSON.stringify(myJSONObject, undefined, 2);
+
+  document.getElementById("output").innerHTML = str;
+
 };
 
-var str = JSON.stringify(myJSONObject, undefined, 2);
-
-document.getElementById("output").innerHTML = str;
 
 
