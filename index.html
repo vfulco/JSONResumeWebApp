@@ -13,325 +13,343 @@
   <body>
 
   	<div class="container">
-    	<center>
-    		<div class="heading">
-		    	<h1 style="padding-bottom: 35px; color: black;">JSON Resume Web App</h1>
-		    	<p>Use this to generate quick and easy JSON to use for your <a href="http://jsonresume.org/">JSON Resume</a>.</p>
-		    	<p>Fill out the forms and click "Generate" at the bottom when complete!</p>
-		    	<p><small>Note:  This website is still under construction.  If you'd like to help, make a pull request <a href="https://github.com/jonnykry/JSONResumeWebApp">here</a>.</small></p>
-		    </div>
-    	</center>
-    
-		<form class="form-horizontal" role="form">
-		  
-		  <h2>Bio</h2>
-		  <div class="form-group">
-		    <label for="inputFirstName" class="col-sm-2 control-label">First Name</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputFirstName" placeholder="First Name">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputLastName" class="col-sm-2 control-label">Last Name</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputLastName" placeholder="Last Name">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputWorkEmail" class="col-sm-2 control-label">E-mail (Work)</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputWorkEmail" placeholder="Work e-mail">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputPersonalEmail" class="col-sm-2 control-label">E-mail (Personal)</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputPersonalEmail" placeholder="Personal e-mail">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputWorkPhone" class="col-sm-2 control-label">Phone # (Work)</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputWorkPhone" placeholder="Work phone">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputPersonalPhone" class="col-sm-2 control-label">Phone # (Personal)</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputPersonalPhone" placeholder="Personal phone">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputSummary" class="col-sm-2 control-label">Summary</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputBioSummary" placeholder="Write a 2-3 sentence summary about yourself">
-		    </div>
-		  </div>
 
-		  <h2>Location</h2>
-		  <div class="form-group">
-		    <label for="inputCity" class="col-sm-2 control-label">City</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputCity" placeholder="e.g. San Francisco">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputCountry" class="col-sm-2 control-label">Country</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputCountry" placeholder="e.g. US, AU, IN">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputRegion" class="col-sm-2 control-label">Region</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputRegion" placeholder="If you specify a region, you don't need a state e.g. Queensland">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputState" class="col-sm-2 control-label">State</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputState" placeholder="If you specify a state, you don't need a region e.g. Texas">
-		    </div>
-		  </div>
+	    	<center>
+	    		<div class="heading" style="margin-bottom: 30px;">
+			    	<h1 style="padding-bottom: 35px; color: black;">JSON Resume Web App</h1>
+			    	<p>Use this to generate quick and easy JSON to use for your <a href="http://jsonresume.org/">JSON Resume</a>.</p>
+			    	<p>Fill out the forms and click "Generate" at the bottom when complete!</p>
+			    	<p><small>Note:  This website is still under construction.  If you'd like to help, make a pull request <a href="https://github.com/jonnykry/JSONResumeWebApp">here</a>.</small></p>
+			    </div>
+	    	</center>
 
-		  <h2>Websites</h2>
-		  <div class="form-group">
-		    <label for="inputWebsiteTagname" class="col-sm-2 control-label">Tagname</label>
-		    <div class="col-sm-3">
-		      <input type="forminput" class="form-control" id="inputWebsiteTagname" placeholder="e.g. 'Blog'">
-		    </div>
-		    <label for="inputWebsiteURL" class="col-sm-2 control-label">URL</label>
-			<div class="col-sm-3">
-		      <input type="forminput" class="form-control" id="inputWebsiteURL" placeholder="www.example.com">
-		    </div>
-		    <div class="col-sm-offset-2 col-sm-10">
-		      <button type="add" class="btn btn-default" id="addWebsite">Add Another Website</button>
-		    </div>
-		  </div>
+	    <div class="row">
+    		<div class="col-lg-6">
+    			<h1><center>JSON Generator</center></h2>
+			<form class="form-horizontal" role="form">
+			  
+			  <h2>Bio</h2>
+			  <div class="form-group">
+			    <label for="inputFirstName" class="col-sm-2 control-label">First Name</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputFirstName" placeholder="First Name">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputLastName" class="col-sm-2 control-label">Last Name</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputLastName" placeholder="Last Name">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputWorkEmail" class="col-sm-2 control-label">E-mail (Work)</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputWorkEmail" placeholder="Work e-mail">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputPersonalEmail" class="col-sm-2 control-label">E-mail (Personal)</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputPersonalEmail" placeholder="Personal e-mail">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputWorkPhone" class="col-sm-2 control-label">Phone # (Work)</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputWorkPhone" placeholder="Work phone">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputPersonalPhone" class="col-sm-2 control-label">Phone # (Personal)</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputPersonalPhone" placeholder="Personal phone">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputSummary" class="col-sm-2 control-label">Summary</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputBioSummary" placeholder="Write a 2-3 sentence summary about yourself">
+			    </div>
+			  </div>
 
-		  <h2>Profiles</h2>
-		  <div class="form-group">
-		    <label for="inputProfileTagname" class="col-sm-2 control-label">Tagname</label>
-		    <div class="col-sm-3">
-		      <input type="forminput" class="form-control" id="inputProfileTagname" placeholder="e.g. 'Facebook'">
-		    </div>
-		    <label for="inputProfileUsername" class="col-sm-2 control-label">Username</label>
-			<div class="col-sm-3">
-		      <input type="forminput" class="form-control" id="inputProfileUsername" placeholder="Bob Ross">
-		    </div>
-		    <div class="col-sm-offset-2 col-sm-10">
-		      <button type="add" class="btn btn-default" id="addProfile">Add Another Profile</button>
-		  	</div>
-		  </div>
+			  <h2>Location</h2>
+			  <div class="form-group">
+			    <label for="inputCity" class="col-sm-2 control-label">City</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputCity" placeholder="e.g. San Francisco">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputCountry" class="col-sm-2 control-label">Country</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputCountry" placeholder="e.g. US, AU, IN">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputRegion" class="col-sm-2 control-label">Region</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputRegion" placeholder="If you specify a region, you don't need a state e.g. Queensland">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputState" class="col-sm-2 control-label">State</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputState" placeholder="If you specify a state, you don't need a region e.g. Texas">
+			    </div>
+			  </div>
 
-		  <h2>Work</h2>
-		  <div class="form-group">
-		    <label for="inputCompany" class="col-sm-2 control-label">Company</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputCompany" placeholder="e.g. Facebook">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputPosition" class="col-sm-2 control-label">Position</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputPosition" placeholder="e.g. Software Engineer">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputWorkWebsite" class="col-sm-2 control-label">Website</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputWorkWebsite" placeholder="e.g. http://facebook.com">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputWorkStartDate" class="col-sm-2 control-label">Start Date</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputWorkStartDate" placeholder="ISO 8601 Date Standard e.g. 2012-06-29">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputWorkEndDate" class="col-sm-2 control-label">End Date</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputWorkEndDate" placeholder="e.g. 2014-06-29">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputLastName" class="col-sm-2 control-label">Summary</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputWorkSummary" placeholder="Give an overview of your responsibilities at the company">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputHighlights" class="col-sm-2 control-label">Highlights</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputHighlights" placeholder="e.g. Increased profits by 20% from 2011-2012 through viral advertising">
-		    </div>
-		    <div class="col-sm-offset-2 col-sm-10">
-		      <button type="add" class="btn btn-default" id="addHighlight">Add Another Highlight</button>
-		  	</div>		    
-		  </div>		  		  		  		  		  		  
+			  <h2>Websites</h2>
+			  <div class="form-group">
+			    <label for="inputWebsiteTagname" class="col-sm-2 control-label">Tagname</label>
+			    <div class="col-sm-3">
+			      <input type="forminput" class="form-control" id="inputWebsiteTagname" placeholder="e.g. 'Blog'">
+			    </div>
+			    <label for="inputWebsiteURL" class="col-sm-2 control-label">URL</label>
+				<div class="col-sm-3">
+			      <input type="forminput" class="form-control" id="inputWebsiteURL" placeholder="www.example.com">
+			    </div>
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="add" class="btn btn-default" id="addWebsite">Add Another Website</button>
+			    </div>
+			  </div>
 
-		  <h2>Education</h2>
-		  <div class="form-group">
-		    <label for="inputInstitution" class="col-sm-2 control-label">Institution</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputInstitution" placeholder="e.g. Massachusetts Institute of Technology">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputArea" class="col-sm-2 control-label">Area</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputArea" placeholder="e.g. Arts">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputStudyType" class="col-sm-2 control-label">Study Type</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputStudyType" placeholder="e.g. Bachelor">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputEduStartDate" class="col-sm-2 control-label">Start Date</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputEduStartDate" placeholder="e.g. 2012-06-09">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputEduEndDate" class="col-sm-2 control-label">End Date</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputEduEndDate" placeholder="e.g. 2014-06-29">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputCourses" class="col-sm-2 control-label">Courses</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputCourses" placeholder="e.g. H1302 - Introduction to American history">
-		    </div>
-		    <div class="col-sm-offset-2 col-sm-10">
-		      <button type="add" class="btn btn-default" id="addCourse">Add Another Course</button>
-		  	</div>				    
-		  </div>
+			  <h2>Profiles</h2>
+			  <div class="form-group">
+			    <label for="inputProfileTagname" class="col-sm-2 control-label">Tagname</label>
+			    <div class="col-sm-3">
+			      <input type="forminput" class="form-control" id="inputProfileTagname" placeholder="e.g. 'Facebook'">
+			    </div>
+			    <label for="inputProfileUsername" class="col-sm-2 control-label">Username</label>
+				<div class="col-sm-3">
+			      <input type="forminput" class="form-control" id="inputProfileUsername" placeholder="Bob Ross">
+			    </div>
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="add" class="btn btn-default" id="addProfile">Add Another Profile</button>
+			  	</div>
+			  </div>
 
-		  <h2>Awards</h2>
-		  <div class="form-group">
-		    <label for="inputTitle" class="col-sm-2 control-label">Title</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputTitle" placeholder="e.g. One of the 100 greatest minds of the century">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputAwardDate" class="col-sm-2 control-label">Award Date</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputAwardDate" placeholder="e.g. 1989-06-12">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputAwarder" class="col-sm-2 control-label">Awarder</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputAwarder" placeholder="e.g. Time Magazine">
-		    </div>
-		    <div class="col-sm-offset-2 col-sm-10" style="padding-top: 15px;">
-		      <button type="add" class="btn btn-default" id="addAward">Add Another Award</button>
-		  	</div>
-		  </div>
+			  <h2>Work</h2>
+			  <div class="form-group">
+			    <label for="inputCompany" class="col-sm-2 control-label">Company</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputCompany" placeholder="e.g. Facebook">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputPosition" class="col-sm-2 control-label">Position</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputPosition" placeholder="e.g. Software Engineer">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputWorkWebsite" class="col-sm-2 control-label">Website</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputWorkWebsite" placeholder="e.g. http://facebook.com">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputWorkStartDate" class="col-sm-2 control-label">Start Date</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputWorkStartDate" placeholder="ISO 8601 Date Standard e.g. 2012-06-29">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputWorkEndDate" class="col-sm-2 control-label">End Date</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputWorkEndDate" placeholder="e.g. 2014-06-29">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputLastName" class="col-sm-2 control-label">Summary</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputWorkSummary" placeholder="Give an overview of your responsibilities at the company">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputHighlights" class="col-sm-2 control-label">Highlights</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputHighlights" placeholder="e.g. Increased profits by 20% from 2011-2012 through viral advertising">
+			    </div>
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="add" class="btn btn-default" id="addHighlight">Add Another Highlight</button>
+			  	</div>		    
+			  </div>		  		  		  		  		  		  
+
+			  <h2>Education</h2>
+			  <div class="form-group">
+			    <label for="inputInstitution" class="col-sm-2 control-label">Institution</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputInstitution" placeholder="e.g. Massachusetts Institute of Technology">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputArea" class="col-sm-2 control-label">Area</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputArea" placeholder="e.g. Arts">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputStudyType" class="col-sm-2 control-label">Study Type</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputStudyType" placeholder="e.g. Bachelor">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputEduStartDate" class="col-sm-2 control-label">Start Date</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputEduStartDate" placeholder="e.g. 2012-06-09">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputEduEndDate" class="col-sm-2 control-label">End Date</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputEduEndDate" placeholder="e.g. 2014-06-29">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputCourses" class="col-sm-2 control-label">Courses</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputCourses" placeholder="e.g. H1302 - Introduction to American history">
+			    </div>
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="add" class="btn btn-default" id="addCourse">Add Another Course</button>
+			  	</div>				    
+			  </div>
+
+			  <h2>Awards</h2>
+			  <div class="form-group">
+			    <label for="inputTitle" class="col-sm-2 control-label">Title</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputTitle" placeholder="e.g. One of the 100 greatest minds of the century">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputAwardDate" class="col-sm-2 control-label">Award Date</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputAwardDate" placeholder="e.g. 1989-06-12">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputAwarder" class="col-sm-2 control-label">Awarder</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputAwarder" placeholder="e.g. Time Magazine">
+			    </div>
+			    <div class="col-sm-offset-2 col-sm-10" style="padding-top: 15px;">
+			      <button type="add" class="btn btn-default" id="addAward">Add Another Award</button>
+			  	</div>
+			  </div>
 
 
-		  <h2>Publications</h2>
-		  <div class="form-group">
-		    <label for="inputPublicationName" class="col-sm-2 control-label">Name</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputPublicationName" placeholder="e.g. The World Wide Web">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputPublisher" class="col-sm-2 control-label">Publisher</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputPublisher" placeholder="e.g. IEEE, Computer Magazine">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputReleaseDate" class="col-sm-2 control-label">Release Date</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputReleaseDate" placeholder="e.g. 1990-08-01">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputPublicationWebsite" class="col-sm-2 control-label">Website</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputPublicationWebsite" placeholder="e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html">
-		    </div>
-		    <div class="col-sm-offset-2 col-sm-10" style="padding-top: 15px;">
-		      <button type="add" class="btn btn-default" id="addPublication">Add Another Publication</button>
-		  	</div>
-		  </div>
+			  <h2>Publications</h2>
+			  <div class="form-group">
+			    <label for="inputPublicationName" class="col-sm-2 control-label">Name</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputPublicationName" placeholder="e.g. The World Wide Web">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputPublisher" class="col-sm-2 control-label">Publisher</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputPublisher" placeholder="e.g. IEEE, Computer Magazine">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputReleaseDate" class="col-sm-2 control-label">Release Date</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputReleaseDate" placeholder="e.g. 1990-08-01">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputPublicationWebsite" class="col-sm-2 control-label">Website</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputPublicationWebsite" placeholder="e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html">
+			    </div>
+			    <div class="col-sm-offset-2 col-sm-10" style="padding-top: 15px;">
+			      <button type="add" class="btn btn-default" id="addPublication">Add Another Publication</button>
+			  	</div>
+			  </div>
 
-		  <h2>Skills</h2>
-		  <div class="form-group">
-		    <label for="inputSkillName" class="col-sm-2 control-label">Name</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputSkillName" placeholder="e.g. Web Development">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputLevel" class="col-sm-2 control-label">Level</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputLevel" placeholder="e.g. Master">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputSkillKeywords" class="col-sm-2 control-label">Keywords</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputSkillKeywords" placeholder="e.g. HTML">
-		    </div>
-		    <div class="col-sm-offset-2 col-sm-5">
-		      <button type="add" class="btn btn-default" id="addSkillKeyword">Add Another Keyword</button>
-		  	</div>
-		  	<div class="col-sm-offset-2 col-sm-5" style="padding-top: 15px;">
-		      <button type="add" class="btn btn-default" id="addSkill">Add Another Skill</button>
-		  	</div>
-		  </div>
+			  <h2>Skills</h2>
+			  <div class="form-group">
+			    <label for="inputSkillName" class="col-sm-2 control-label">Name</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputSkillName" placeholder="e.g. Web Development">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputLevel" class="col-sm-2 control-label">Level</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputLevel" placeholder="e.g. Master">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputSkillKeywords" class="col-sm-2 control-label">Keywords</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputSkillKeywords" placeholder="e.g. HTML">
+			    </div>
+			    <div class="col-sm-offset-2 col-sm-5">
+			      <button type="add" class="btn btn-default" id="addSkillKeyword">Add Another Keyword</button>
+			  	</div>
+			  	<div class="col-sm-offset-2 col-sm-5" style="padding-top: 15px;">
+			      <button type="add" class="btn btn-default" id="addSkill">Add Another Skill</button>
+			  	</div>
+			  </div>
 
-		  <h2>Hobbies</h2>
-		  <div class="form-group">
-		    <label for="inputHobbyName" class="col-sm-2 control-label">Name</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputHobbyName" placeholder="e.g. Philosophy">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputHobbyKeywords" class="col-sm-2 control-label">Keywords</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputHobbyKeywords" placeholder="e.g. Friedrich Nietzsche">
-		    </div>
-		    <div class="col-sm-offset-2 col-sm-5">
-		      <button type="add" class="btn btn-default" id="addHobbyKeyword">Add Another Keyword</button>
-		  	</div>
-		  </div>
+			  <h2>Hobbies</h2>
+			  <div class="form-group">
+			    <label for="inputHobbyName" class="col-sm-2 control-label">Name</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputHobbyName" placeholder="e.g. Philosophy">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputHobbyKeywords" class="col-sm-2 control-label">Keywords</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputHobbyKeywords" placeholder="e.g. Friedrich Nietzsche">
+			    </div>
+			    <div class="col-sm-offset-2 col-sm-5">
+			      <button type="add" class="btn btn-default" id="addHobbyKeyword">Add Another Keyword</button>
+			  	</div>
+			  </div>
 
-		  <h2>References</h2>
-		  <div class="form-group">
-		    <label for="inputReferenceName" class="col-sm-2 control-label">Name</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputReferenceName" placeholder="e.g. Timothy Cook">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputReference" class="col-sm-2 control-label">Reference</label>
-		    <div class="col-sm-8">
-		      <input type="forminput" class="form-control" id="inputReference" placeholder="e.g. Joe blogs was a great employee, who turned up to work at least once a week.">
-		    </div>
-		    <div class="col-sm-offset-2 col-sm-5" style="padding-top: 15px;">
-		      <button type="add" class="btn btn-default" id="addReference">Add Another Reference</button>
-		  	</div>
-		  </div>
-		</form>
+			  <h2>References</h2>
+			  <div class="form-group">
+			    <label for="inputReferenceName" class="col-sm-2 control-label">Name</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputReferenceName" placeholder="e.g. Timothy Cook">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputReference" class="col-sm-2 control-label">Reference</label>
+			    <div class="col-sm-8">
+			      <input type="forminput" class="form-control" id="inputReference" placeholder="e.g. Joe blogs was a great employee, who turned up to work at least once a week.">
+			    </div>
+			    <div class="col-sm-offset-2 col-sm-5" style="padding-top: 15px;">
+			      <button type="add" class="btn btn-default" id="addReference">Add Another Reference</button>
+			  	</div>
+			  </div>
+			</form>
 
-		<div class="button">
-			<button onclick="readInput()" type="generate" class="btn btn-default">Generate</button>
+			<div class="row">
+				<div class="button">
+					<button onclick="readInput()" type="generate" class="btn btn-default col-sm-offset-1 col-sm-4">Generate JSON</button>
+				</div>
+
+				<div class="button">
+					<button onclick="copyToClipboard()" type="copy" class="btn btn-default col-sm-offset-2 col-sm-4">Copy to Clipboard</button>
+				</div>
+			</div>
+
+			<span id="output"></span>
+			
 		</div>
+		<div class="col-lg-6">
+			<h1><center>Theme Preview</center></h1>
+			<p><center>Coming soon!</center></p>
 
-		<pre id="output">
-		</pre>
+			<div id="themeResults"></div>
+		</div>
+		</div>
     </div>
 
 

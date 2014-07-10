@@ -1,6 +1,7 @@
 $('#output').hide();
 
 var myJSONObject;
+var str;
 
 function readInput() {
   $('#output').show();
@@ -150,8 +151,40 @@ function readInput() {
   myJSONObject.bio.websites[inputWebsiteTagname] = inputWebsiteURL;
   myJSONObject.bio.profiles[inputProfileTagname] = inputProfileUsername;
 
-  var str = JSON.stringify(myJSONObject, undefined, 2);
+  str = JSON.stringify(myJSONObject, undefined, 2);
 
-  document.getElementById("output").innerHTML = str;
+  document.getElementById("output").innerHTML = '<pre id="outputText">' + str + '</pre>';
 
 };
+
+
+JSONTest = function() {
+    var resultDiv = $("#themeResults");
+
+    $.ajax({
+        url: "http://themes.jsonresume.org/theme/modern",
+        type: "POST",
+        data: { resume: "resumeObject" },
+        dataType: "json",
+        success: function (result) {
+            switch (result) {
+                case true:
+                    processResponse(result);
+                    break;
+                default:
+                    resultDiv.html(result);
+            }
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+        alert(xhr.status);
+        alert(thrownError);
+        }
+    });
+};
+
+console.log(JSONTest);
+
+
+function copyToClipboard() {
+  window.prompt("The JSON is selected - copy it with CMD + C (Mac) or CTRL + C (Windows)", str);
+}
