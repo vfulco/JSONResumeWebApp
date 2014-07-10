@@ -17,7 +17,7 @@ function readInput() {
   var inputCountry = document.getElementById("inputCountry").value;
   var inputRegion = document.getElementById("inputRegion").value;
   var inputState = document.getElementById("inputState").value;
-  var inputWebsiteTagname = + document.getElementById("inputWebsiteTagname").value;
+  var inputWebsiteTagname = document.getElementById("inputWebsiteTagname").value;
   var inputWebsiteURL = document.getElementById("inputWebsiteURL").value;
   var inputProfileTagname = document.getElementById("inputProfileTagname").value;
   var inputProfileUsername = document.getElementById("inputProfileUsername").value;
@@ -70,10 +70,10 @@ function readInput() {
         "state": inputState
       },
       "websites": {
-        "websitetag": inputWebsiteURL // needs to be fixed
+        // filled from bottom for custom property name
       },
       "profiles": {
-        "profiletag": inputProfileUsername // needs to be fixed
+        // filled from bottom for custom property name
       }
     },
 
@@ -147,6 +147,9 @@ function readInput() {
       }
     ]
   };
+
+  myJSONObject.bio.websites[inputWebsiteTagname] = inputWebsiteURL;
+  myJSONObject.bio.profiles[inputProfileTagname] = inputProfileUsername;
 
   var str = JSON.stringify(myJSONObject, undefined, 2);
 
