@@ -157,33 +157,34 @@ function readInput() {
 
 };
 
+// POST request for the theme
+// currently not working - needs work
 
-JSONTest = function() {
-    var resultDiv = $("#themeResults");
+// JSONTest = function() {
+//     var resultDiv = $("#themeResults");
 
-    $.ajax({
-        url: "http://themes.jsonresume.org/theme/modern",
-        type: "POST",
-        data: { resume: "resumeObject" },
-        dataType: "json",
-        success: function (result) {
-            switch (result) {
-                case true:
-                    processResponse(result);
-                    break;
-                default:
-                    resultDiv.html(result);
-            }
-        },
-        error: function (xhr, ajaxOptions, thrownError) {
-        alert(xhr.status);
-        alert(thrownError);
-        }
-    });
-};
+//     $.ajax({
+//         url: "http://themes.jsonresume.org/theme/modern",
+//         type: "POST",
+//         data: { resume: "resumeObject" },
+//         dataType: "json",
+//         success: function (result) {
+//             switch (result) {
+//                 case true:
+//                     processResponse(result);
+//                     break;
+//                 default:
+//                     resultDiv.html(result);
+//             }
+//         },
+//         error: function (xhr, ajaxOptions, thrownError) {
+//         alert(xhr.status);
+//         alert(thrownError);
+//         }
+//     });
+// };
 
 console.log(JSONTest);
-
 
 function copyToClipboard() {
   window.prompt("The JSON is selected - copy it with CMD + C (Mac) or CTRL + C (Windows)", str);
