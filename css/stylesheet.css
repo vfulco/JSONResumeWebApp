@@ -1,6 +1,6 @@
 body {
-	background-color: #000000;
-	color: #ede0ce;
+	background-color: #ffffff;
+	color: #555555;
 }
 
 .container {
@@ -8,7 +8,6 @@ body {
 	padding-bottom: 2%;
 	padding-top: 2%;
 	width: 75%;
-	background-color: #2b2a27;
 }
 
 .heading {
@@ -17,7 +16,7 @@ body {
 }
 
 .heading p {
-	color: #FFFFFF;
+	color: #555555;
 }
 
 h2 {
@@ -29,8 +28,12 @@ h2 {
 }
 
 .btn-default {
-	background-color: #2b2a27;
-	color: #FFFFFF;
+	background-color: #D0D0D0;
+	color: #000000;
+}
+
+.btn-default:hover {
+	background-color: #D0D0D0;
 }
 
 .button {
@@ -39,12 +42,11 @@ h2 {
 
 #output {
 	margin-top: 5%;
-	background-color: black;
+	background-color: #2b2a27;
 	color: #bcd42a;
 }
 
 .footer {
-	background-color: #2b2a27;
 	opacity: 0.95;
 	text-align: center;
 }
