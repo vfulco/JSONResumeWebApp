@@ -1,4 +1,3 @@
-
 $('#output').hide();
 
 var myJSONObject;
@@ -156,6 +155,3 @@ function readInput() {
   document.getElementById("output").innerHTML = str;
 
 };
-
-
-
