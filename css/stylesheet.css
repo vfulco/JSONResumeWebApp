@@ -19,6 +19,10 @@ hr {
 	width: 50%;
 }
 
+button {
+	font-family: 'Kalam', Helvetica, arial;
+}
+
 .landingHeader {
 	font-family: 'Kalam', Helvetica, arial;
 	font-size: 5em;
