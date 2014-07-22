@@ -6,29 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JSON Resume Web App</title>
 
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Kalam:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>    
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/stylesheet.css" rel="stylesheet">
   </head>
   <body>
 
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <h2><a class="navbar-brand" href="#">JSON Resume Web App</a></h2>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      	<li><p class="navbar-text">Jump To:</p></li>
+		<li><a href="#">Home</a></li>
+		<li><a href="#bio">Bio</a></li>
+		<li><a href="#location">Location</a></li>
+		<li><a href="#websites">Websites</a></li>
+		<li><a href="#profiles">Profiles</a></li>
+		<li><a href="#work">Work</a></li>
+		<li><a href="#education">Education</a></li>
+		<li><a href="#awards">Awards</a></li>
+		<li><a href="#publications">Publications</a></li>
+		<li><a href="#skills">Skills</a></li>
+		<li><a href="#hobbies">Hobbies</a></li>
+		<li><a href="#references">References</a></li>
+		<li><a href="#json">JSON</a></li>
+		<li><button onclick="readInput()" type="generate" class="btn btn-default navbar-btn">Generate JSON</button></li>
+		<li><button onclick="copyToClipboard()" type="copy" class="btn btn-default navbar-btn">Copy to Clipboard</button></li>				  
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
   	<div class="container">
 
 	    	<center>
-	    		<div class="heading" style="margin-bottom: 30px;">
-			    	<h1 style="padding-bottom: 35px; color: black;">JSON Resume Web App</h1>
-			    	<p>Use this to generate quick and easy JSON to use for your <a href="http://jsonresume.org/">JSON Resume</a>.</p>
-			    	<p>Fill out the forms and click "Generate" at the bottom when complete!</p>
-			    	<p><small>Note:  This website is still under construction.  If you'd like to help, make a pull request <a href="https://github.com/jonnykry/JSONResumeWebApp">here</a>.</small></p>
+	    		<div class="heading">
+			    	<header class="landingHeader">JSON Resume Web App</header>
+			    	<p>Use this to generate quick and easy JSON to use for your <a href="http://jsonresume.org/" target="_blank">JSON Resume</a>.</p>
+			    	<p>Fill out the forms and click "Generate" when complete!</p><br>
+			    	<p><small>Note:  This website is still under construction.  If you'd like to help, make a pull request <a href="https://github.com/jonnykry/JSONResumeWebApp" target="_blank">here</a>.</small></p>
 			    </div>
 	    	</center>
 
 	    <div class="row">
     		<div class="col-lg-6">
     			<h1><center>JSON Generator</center></h2>
+    				<hr>
 			<form class="form-horizontal" role="form">
 			  
-			  <h2>Bio</h2>
+			  <h2 id="bio">Bio</h2>
 			  <div class="form-group">
 			    <label for="inputFirstName" class="col-sm-2 control-label">First Name</label>
 			    <div class="col-sm-8">
@@ -72,7 +114,7 @@
 			    </div>
 			  </div>
 
-			  <h2>Location</h2>
+			  <h2 id="location">Location</h2>
 			  <div class="form-group">
 			    <label for="inputCity" class="col-sm-2 control-label">City</label>
 			    <div class="col-sm-8">
@@ -98,7 +140,7 @@
 			    </div>
 			  </div>
 
-			  <h2>Websites</h2>
+			  <h2 id="websites">Websites</h2>
 			  <div class="form-group">
 			    <label for="inputWebsiteTagname" class="col-sm-2 control-label">Tagname</label>
 			    <div class="col-sm-3">
@@ -113,7 +155,7 @@
 			    </div>
 			  </div>
 
-			  <h2>Profiles</h2>
+			  <h2 id="profiles">Profiles</h2>
 			  <div class="form-group">
 			    <label for="inputProfileTagname" class="col-sm-2 control-label">Tagname</label>
 			    <div class="col-sm-3">
@@ -128,7 +170,7 @@
 			  	</div>
 			  </div>
 
-			  <h2>Work</h2>
+			  <h2 id="work">Work</h2>
 			  <div class="form-group">
 			    <label for="inputCompany" class="col-sm-2 control-label">Company</label>
 			    <div class="col-sm-8">
@@ -175,7 +217,7 @@
 			  	</div>		    
 			  </div>		  		  		  		  		  		  
 
-			  <h2>Education</h2>
+			  <h2 id="education">Education</h2>
 			  <div class="form-group">
 			    <label for="inputInstitution" class="col-sm-2 control-label">Institution</label>
 			    <div class="col-sm-8">
@@ -216,7 +258,7 @@
 			  	</div>				    
 			  </div>
 
-			  <h2>Awards</h2>
+			  <h2 id="awards">Awards</h2>
 			  <div class="form-group">
 			    <label for="inputTitle" class="col-sm-2 control-label">Title</label>
 			    <div class="col-sm-8">
@@ -240,7 +282,7 @@
 			  </div>
 
 
-			  <h2>Publications</h2>
+			  <h2 id="publications">Publications</h2>
 			  <div class="form-group">
 			    <label for="inputPublicationName" class="col-sm-2 control-label">Name</label>
 			    <div class="col-sm-8">
@@ -269,7 +311,7 @@
 			  	</div>
 			  </div>
 
-			  <h2>Skills</h2>
+			  <h2 id="skills">Skills</h2>
 			  <div class="form-group">
 			    <label for="inputSkillName" class="col-sm-2 control-label">Name</label>
 			    <div class="col-sm-8">
@@ -295,7 +337,7 @@
 			  	</div>
 			  </div>
 
-			  <h2>Hobbies</h2>
+			  <h2 id="hobbies">Hobbies</h2>
 			  <div class="form-group">
 			    <label for="inputHobbyName" class="col-sm-2 control-label">Name</label>
 			    <div class="col-sm-8">
@@ -312,7 +354,7 @@
 			  	</div>
 			  </div>
 
-			  <h2>References</h2>
+			  <h2 id="references">References</h2>
 			  <div class="form-group">
 			    <label for="inputReferenceName" class="col-sm-2 control-label">Name</label>
 			    <div class="col-sm-8">
@@ -339,28 +381,26 @@
 					<button onclick="copyToClipboard()" type="copy" class="btn btn-default col-sm-offset-2 col-sm-4">Copy to Clipboard</button>
 				</div>
 			</div>
-
-			<span id="output"></span>
 			
 		</div>
 		<div class="col-lg-6">
-			<h1><center>Theme Preview</center></h1>
-			<p><center>Coming soon!</center></p>
+			<h1 id="json"><center>JSON</center><hr>
 
+			<span id="output" class="outputText"></span>
 			<div id="themeResults"></div>
-		</div>
 		</div>
     </div>
 
 
     <footer>
     	<div class="container">
-    	<div class="footer"><center>Created by Jonny Krysh &copy;2014.</center></div>
+    	<div class="footer"><center>Created by <a href="http://www.jonnykrysh.com" target="_blank">Jonny Krysh</a> &copy;2014.</center></div>
     	</div>
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 

@@ -158,7 +158,7 @@ function readInput() {
 };
 
 // POST request for the theme
-// currently not working - needs work
+// TODO
 
 // JSONTest = function() {
 //     var resultDiv = $("#themeResults");
